@@ -6,6 +6,9 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder {
     public function run(): void {
-        $this->call([VocabularySeeder::class]);
+        $this->call([
+            CalibrationSeeder::class,
+            VocabularySeeder::class
+        ]);
     }
 }

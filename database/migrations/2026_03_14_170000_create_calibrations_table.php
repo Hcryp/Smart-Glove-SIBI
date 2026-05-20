@@ -10,10 +10,10 @@ return new class extends Migration {
             $table->id(); $table->string('name')->unique();
             $table->integer('f0')->default(3683); $table->integer('f1')->default(3106); $table->integer('f2')->default(2928); $table->integer('f3')->default(3715); $table->integer('f4')->default(3215);
             $table->integer('b0')->default(3692); $table->integer('b1')->default(3123); $table->integer('b2')->default(2953); $table->integer('b3')->default(3727); $table->integer('b4')->default(3285);
-            $table->float('sf0')->default(2.1); $table->float('sf1')->default(2.4); $table->float('sf2')->default(1.9); $table->float('sf3')->default(2.2); $table->float('sf4')->default(2.5);
-            $table->float('sb0')->default(2.6); $table->float('sb1')->default(3.1); $table->float('sb2')->default(2.8); $table->float('sb3')->default(2.4); $table->float('sb4')->default(3.4);
-            $table->float('ax')->default(0); $table->float('ay')->default(0); $table->float('az')->default(0);
-            $table->float('gx')->default(0.013); $table->float('gy')->default(0.128); $table->float('gz')->default(-0.006);
+            $table->double('sf0', 8, 2)->default(2.10); $table->double('sf1', 8, 2)->default(2.40); $table->double('sf2', 8, 2)->default(1.90); $table->double('sf3', 8, 2)->default(2.20); $table->double('sf4', 8, 2)->default(2.50);
+            $table->double('sb0', 8, 2)->default(2.60); $table->double('sb1', 8, 2)->default(3.10); $table->double('sb2', 8, 2)->default(2.80); $table->double('sb3', 8, 2)->default(2.40); $table->double('sb4', 8, 2)->default(3.40);
+            $table->double('ax', 8, 2)->default(0.00); $table->double('ay', 8, 2)->default(0.00); $table->double('az', 8, 2)->default(0.00);
+            $table->double('gx', 8, 2)->default(0.01); $table->double('gy', 8, 2)->default(0.13); $table->double('gz', 8, 2)->default(-0.01);
             $table->timestamps();
         });
     }
